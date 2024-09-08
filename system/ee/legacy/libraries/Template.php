@@ -4562,6 +4562,7 @@ class EE_Template
                 $value = in_array($role->getId(), $assigned_role_ids);
 
                 $vars['has_role_' . $role->short_name] = $value;
+                $vars['has_role_' . $role->role_id] = $value;
             }
         }
 
